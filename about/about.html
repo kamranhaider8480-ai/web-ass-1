@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marcos Luxury Cars</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<script type="module" src="/src/pages/home/home.js"></script>
+
+<header class="bg-white shadow-sm">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-white font-bold">M</div>
+      <div>
+        <div class="text-lg font-semibold">Marcos</div>
+        <div class="text-xs text-gray-500 -mt-1">Luxury Cars</div>
+      </div>
+    </a>
+    <nav class="space-x-6 hidden md:flex items-center">
+      <a href="/index.html" class="text-gray-700 hover:text-yellow-600">Home</a>
+      <a href="/about/about.html" class="text-gray-700 hover:text-yellow-600">About</a>
+      <a href="/contact/contact.html" class="text-gray-700 hover:text-yellow-600">Contact</a>
+      <a href="/signup/signup.html" class="text-gray-700 hover:text-yellow-600">Sign Up</a>
+      <a href="/signin/signin.html" class="text-gray-700 hover:text-yellow-600">Sign In</a>
+      <button id="themeToggle" class="px-3 py-1 border rounded">🌙 Dark Mode</button>
+
+    </nav>
+    <div class="md:hidden">
+      <button id="menuBtn" class="text-gray-700">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main class="container mx-auto px-6 py-12">
+  <section class="bg-white rounded-lg p-8 card-shadow">
+    <h1 class="text-3xl font-extrabold">About Marcos Luxury Cars</h1>
+    <p class="mt-4 text-gray-600">Marcos curates the finest selection of luxury and exotic automobiles. Our team ensures authentic provenance, impeccable condition, and personalized service.</p>
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="font-semibold">Our Story</h3>
+        <p class="text-gray-600 mt-2">Founded by enthusiasts, Marcos blends automotive passion with world-class client care — from acquisition to tailored customizations.</p>
+        <div class="mt-6">
+          <h4 class="font-semibold">Team</h4>
+          <div class="mt-3 space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-yellow-300 rounded-full flex items-center justify-center font-bold">K</div>
+              <div>
+                <div class="font-medium">KAMRAN HAIDER SHAH</div>
+                <div class="text-sm text-gray-500">Founder & CEO</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-yellow-300 rounded-full flex items-center justify-center font-bold">S</div>
+              <div>
+                <div class="font-medium">Sofia Lane</div>
+                <div class="text-sm text-gray-500">Head of Sales</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold">Timeline</h3>
+        <ol class="mt-4 space-y-4">
+          <li>
+            <div class="text-sm text-gray-500">2015 • Founded</div>
+            <div class="font-medium">Marcos established as a private collector’s dealership.</div>
+          </li>
+          <li>
+            <div class="text-sm text-gray-500">2019 • Expansion</div>
+            <div class="font-medium">Launched bespoke concierge services and international delivery.</div>
+          </li>
+          <li>
+            <div class="text-sm text-gray-500">2023 • Certified Partner</div>
+            <div class="font-medium">Partnerships with elite service providers worldwide.</div>
+          </li>
+        </ol>
+
+        <div class="mt-6">
+          <h4 class="font-semibold">Testimonials</h4>
+          <div class="mt-3 space-y-3">
+            <blockquote class="bg-gray-50 p-4 rounded">
+              <p class="text-sm">"Exceptional service and attention to detail. My DB11 arrived flawless." — <span class="font-medium">E. Carter</span></p>
+            </blockquote>
+            <blockquote class="bg-gray-50 p-4 rounded">
+              <p class="text-sm">"A seamless buying experience, highly recommended." — <span class="font-medium">R. Singh</span></p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg card-shadow">
+        <div class="text-3xl font-bold">98%</div>
+        <div class="text-sm text-gray-500">Customer Satisfaction</div>
+      </div>
+      <div class="bg-white p-6 rounded-lg card-shadow">
+        <div class="text-3xl font-bold">250+</div>
+        <div class="text-sm text-gray-500">Cars Sold</div>
+      </div>
+      <div class="bg-white p-6 rounded-lg card-shadow">
+        <div class="text-3xl font-bold">50</div>
+        <div class="text-sm text-gray-500">Countries Delivered</div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="bg-white mt-12 border-t">
+  <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
+    <div class="text-sm text-gray-600">© Marcos Luxury Cars — Crafted with passion.</div>
+    <div class="mt-4 md:mt-0 flex gap-4 text-gray-500 text-sm">
+      <div>Privacy</div>
+      <div>Terms</div>
+      <div>Contact</div>
+    </div>
+  </div>
+</footer>
+<script>
+  const btn = document.getElementById('menuBtn');
+  btn && btn.addEventListener('click', ()=> alert('Use the navigation links on larger screens.'));
+</script>
+</body></html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marcos Luxury Cars</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<script type="module" src="/src/pages/home/home.js"></script>
+
+<header class="bg-white shadow-sm">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-white font-bold">M</div>
+      <div>
+        <div class="text-lg font-semibold">Marcos</div>
+        <div class="text-xs text-gray-500 -mt-1">Luxury Cars</div>
+      </div>
+    </a>
+    <nav class="space-x-6 hidden md:flex items-center">
+      <a href="/index.html" class="text-gray-700 hover:text-yellow-600">Home</a>
+      <a href="/about/about.html" class="text-gray-700 hover:text-yellow-600">About</a>
+      <a href="/contact/contact.html" class="text-gray-700 hover:text-yellow-600">Contact</a>
+      <a href="/signup/signup.html" class="text-gray-700 hover:text-yellow-600">Sign Up</a>
+      <a href="/signin/signin.html" class="text-gray-700 hover:text-yellow-600">Sign In</a>
+      <button id="themeToggle" class="px-3 py-1 border rounded">🌙 Dark Mode</button>
+
+    </nav>
+    <div class="md:hidden">
+      <button id="menuBtn" class="text-gray-700">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main class="container mx-auto px-6 py-12">
+  <section class="bg-white rounded-lg p-8 card-shadow">
+    <h1 class="text-2xl font-extrabold">Contact Our Sales Team</h1>
+    <p class="mt-2 text-gray-600">Fill the form and our concierge will get back to you within 24 hours.</p>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="mt-6 space-y-4">
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <label class="text-sm">Full name</label>
+          <input type="text" name="name" required class="w-full mt-1 px-3 py-2 border rounded" placeholder="Your name">
+        </div>
+        <div>
+          <label class="text-sm">Email</label>
+          <input type="email" name="email" required class="w-full mt-1 px-3 py-2 border rounded" placeholder="you@example.com">
+        </div>
+      </div>
+      <div>
+        <label class="text-sm">Interested Model</label>
+        <select name="model" class="w-full mt-1 px-3 py-2 border rounded">
+          <option>Rolls-Royce Phantom</option>
+          <option>Ferrari SF90</option>
+          <option>Lamborghini Aventador</option>
+          <option>Bentley Continental</option>
+          <option>Aston Martin DB11</option>
+          <option>Bugatti Chiron</option>
+        </select>
+      </div>
+      <div>
+        <label class="text-sm">Message</label>
+        <textarea name="message" rows="5" class="w-full mt-1 px-3 py-2 border rounded" placeholder="Tell us your preferences"></textarea>
+      </div>
+      <div class="flex items-center gap-4">
+        <button type="submit" class="px-6 py-2 bg-yellow-400 rounded font-semibold">Send Enquiry</button>
+        <div class="text-sm text-gray-500">Or email us at <strong>sales@marcos.example</strong></div>
+      </div>
+    </form>
+
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-50 p-4 rounded">
+        <h4 class="font-semibold">Head Office</h4>
+        <p class="text-sm text-gray-600 mt-1">London • Private by appointment</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded">
+        <h4 class="font-semibold">Support</h4>
+        <p class="text-sm text-gray-600 mt-1">support@marcos.example</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-white mt-12 border-t">
+  <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
+    <div class="text-sm text-gray-600">© Marcos Luxury Cars — Crafted with passion.</div>
+    <div class="mt-4 md:mt-0 flex gap-4 text-gray-500 text-sm">
+      <div>Privacy</div>
+      <div>Terms</div>
+      <div>Contact</div>
+    </div>
+  </div>
+</footer>
+<script>
+  const btn = document.getElementById('menuBtn');
+  btn && btn.addEventListener('click', ()=> alert('Use the navigation links on larger screens.'));
+</script>
+</body></html>

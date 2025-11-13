@@ -1,0 +1,64 @@
+/* assets/css/style.css */
+:root {
+  --gold: #b99032;
+  --charcoal: #2b2b2b;
+}
+
+body.light {
+  background-color: #f9fafb;
+  color: #2b2b2b;
+}
+
+body.dark {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+body.dark header,
+body.dark footer,
+body.dark main section,
+body.dark .bg-white {
+  background-color: #374151;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+body.dark .bg-gray-50 {
+  background-color: #4b5563;
+}
+
+body.dark .text-gray-600,
+body.dark .text-gray-500,
+body.dark .text-gray-800 {
+  color: #d1d5db;
+}
+
+body.dark input,
+body.dark select,
+body.dark textarea {
+  background-color: #4b5563;
+  color: #f9fafb;
+  border-color: #6b7280;
+}
+
+body.dark input::placeholder {
+  color: #9ca3af;
+}
+
+.card-shadow {
+  box-shadow: 0 8px 30px rgba(43, 43, 43, 0.08);
+}
+
+body.dark .card-shadow {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.badge-gold {
+  background: linear-gradient(90deg, #f7dca8, #f0b43e);
+  color: var(--charcoal);
+}
+
+body.dark .badge-gold {
+  background: linear-gradient(90deg, #d4af37, #b99032);
+  color: #1f2937;
+}

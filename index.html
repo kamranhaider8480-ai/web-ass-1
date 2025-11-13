@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marcos Luxury Cars</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<script type="module" src="/src/pages/home/home.js"></script>
+
+
+<header class="bg-white shadow-sm">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-white font-bold">M</div>
+      <div>
+        <div class="text-lg font-semibold">Marcos</div>
+        <div class="text-xs text-gray-500 -mt-1">Luxury Cars</div>
+      </div>
+    </a>
+    <nav class="space-x-6 hidden md:flex items-center">
+      <a href="/index.html" class="text-gray-700 hover:text-yellow-600">Home</a>
+      <a href="/about/about.html" class="text-gray-700 hover:text-yellow-600">About</a>
+      <a href="/contact/contact.html" class="text-gray-700 hover:text-yellow-600">Contact</a>
+      <a href="/signup/signup.html" class="text-gray-700 hover:text-yellow-600">Sign Up</a>
+      <a href="/signin/signin.html" class="text-gray-700 hover:text-yellow-600">Sign In</a>
+      <a href="/crud/crud.html">crud</a>
+      <button id="themeToggle" class="px-3 py-1 border rounded">🌙 Dark Mode</button>
+
+    </nav>
+    <div class="md:hidden">
+      <button id="menuBtn" class="text-gray-700">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main class="container mx-auto px-6 py-12">
+  <section class="hero-gradient rounded-lg p-10 card-shadow">
+    <div class="md:flex items-center gap-8">
+      <div class="md:w-1/2">
+        <h1 class="text-4xl font-extrabold text-gray-900">Marcos Luxury Cars</h1>
+        <p class="mt-4 text-gray-600">Curated collection of the world’s most prestigious automobiles. Explore features, pricing, and exclusive craftsmanship.</p>
+        <div class="mt-6 flex gap-4">
+          <a href="/about/about.html" class="px-6 py-3 bg-yellow-400 rounded-md font-semibold shadow">About Marcos</a>
+          <a href="/contact/contact.html" class="px-6 py-3 border border-gray-200 rounded-md">Contact Sales</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 mt-6 md:mt-0">
+        <img src="/assets/images/rolls-royce.jpg" alt="hero car" class="rounded-lg card-shadow w-full">
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="text-2xl font-bold mb-4">Featured Models</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded-lg p-4 card-shadow">
+        <img src="/assets/images/rolls-royce.jpg" alt="Rolls-Royce Phantom" class="rounded-md w-full h-48 object-cover">
+        <div class="mt-3">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Rolls-Royce Phantom</h3>
+            <span class="badge-gold px-2 py-1 rounded text-sm font-medium">$550,000</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">Unrivaled luxury, handcrafted interiors, 6.75L V12 engine.</p>
+          <div class="mt-3 flex gap-2">
+            <a href="/contact/contact.html" class="px-3 py-2 border rounded text-sm">Enquire</a>
+            <a href="/about/about.html" class="px-3 py-2 bg-yellow-100 rounded text-sm">Details</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="bg-white rounded-lg p-4 card-shadow">
+        <img src="/assets/images/ferrari.jpg" alt="Ferrari SF90" class="rounded-md w-full h-48 object-cover">
+        <div class="mt-3">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Ferrari SF90</h3>
+            <span class="badge-gold px-2 py-1 rounded text-sm font-medium">$625,000</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">Hybrid powertrain, 986 hp combined, track-oriented performance.</p>
+          <div class="mt-3 flex gap-2">
+            <a href="/contact/contact.html" class="px-3 py-2 border rounded text-sm">Enquire</a>
+            <a href="/about/about.html" class="px-3 py-2 bg-yellow-100 rounded text-sm">Details</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="bg-white rounded-lg p-4 card-shadow">
+        <img src="/assets/images/lamborghini.jpg" alt="Lamborghini Aventador" class="rounded-md w-full h-48 object-cover">
+        <div class="mt-3">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Lamborghini Aventador</h3>
+            <span class="badge-gold px-2 py-1 rounded text-sm font-medium">$420,000</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">V12 naturally aspirated, sharp aerodynamics, aggressive styling.</p>
+          <div class="mt-3 flex gap-2">
+            <a href="/contact/contact.html" class="px-3 py-2 border rounded text-sm">Enquire</a>
+            <a href="/about/about.html" class="px-3 py-2 bg-yellow-100 rounded text-sm">Details</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="bg-white rounded-lg p-4 card-shadow">
+        <img src="/assets/images/bentley.jpg" alt="Bentley Continental" class="rounded-md w-full h-48 object-cover">
+        <div class="mt-3">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Bentley Continental</h3>
+            <span class="badge-gold px-2 py-1 rounded text-sm font-medium">$230,000</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">Refined grand tourer, plush cabin, twin-turbo W12.</p>
+          <div class="mt-3 flex gap-2">
+            <a href="/contact/contact.html" class="px-3 py-2 border rounded text-sm">Enquire</a>
+            <a href="/about/about.html" class="px-3 py-2 bg-yellow-100 rounded text-sm">Details</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="bg-white rounded-lg p-4 card-shadow">
+        <img src="/assets/images/aston-martin.jpg" alt="Aston Martin DB11" class="rounded-md w-full h-48 object-cover">
+        <div class="mt-3">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Aston Martin DB11</h3>
+            <span class="badge-gold px-2 py-1 rounded text-sm font-medium">$205,000</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">Elegant design, V8/V12 options, bespoke personalization.</p>
+          <div class="mt-3 flex gap-2">
+            <a href="/contact/contact.html" class="px-3 py-2 border rounded text-sm">Enquire</a>
+            <a href="/about/about.html" class="px-3 py-2 bg-yellow-100 rounded text-sm">Details</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="bg-white rounded-lg p-4 card-shadow">
+        <img src="/assets/images/bugatti.jpg" alt="Bugatti Chiron" class="rounded-md w-full h-48 object-cover">
+        <div class="mt-3">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Bugatti Chiron</h3>
+            <span class="badge-gold px-2 py-1 rounded text-sm font-medium">$3,000,000</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">Ultra-exclusive hypercar, quad-turbo W16, top-speed engineering.</p>
+          <div class="mt-3 flex gap-2">
+            <a href="/contact/contact.html" class="px-3 py-2 border rounded text-sm">Enquire</a>
+            <a href="/about/about.html" class="px-3 py-2 bg-yellow-100 rounded text-sm">Details</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <section class="mt-12 grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-lg card-shadow">
+      <h4 class="font-semibold">Quality Assurance</h4>
+      <p class="text-sm text-gray-600 mt-2">Every vehicle undergoes a rigorous inspection and comes with certification of authenticity.</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg card-shadow">
+      <h4 class="font-semibold">Personalized Service</h4>
+      <p class="text-sm text-gray-600 mt-2">Tailored purchasing experience with dedicated concierges and customization advisors.</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg card-shadow">
+      <h4 class="font-semibold">Worldwide Delivery</h4>
+      <p class="text-sm text-gray-600 mt-2">Secure shipping and white-glove delivery to your doorstep anywhere in the world.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-white mt-12 border-t">
+  <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
+    <div class="text-sm text-gray-600">© Marcos Luxury Cars — Crafted with passion.</div>
+    <div class="mt-4 md:mt-0 flex gap-4 text-gray-500 text-sm">
+      <div>Privacy</div>
+      <div>Terms</div>
+      <div>Contact</div>
+    </div>
+  </div>
+</footer>
+<script>
+  const btn = document.getElementById('menuBtn');
+  btn && btn.addEventListener('click', ()=> alert('Use the navigation links on larger screens.'));
+</script>
+</body></html>
